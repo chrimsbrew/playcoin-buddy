@@ -1,7 +1,7 @@
 # playcoin-buddy
 A simple Play Coin editor.
 
-I wanted a way to finely customize how many play coins I had on my 3DS, so I wrote a simple app using [LovePotion](https://lovebrew.org/#/).
+I wanted a way to finely customize how many play coins I had on my 3DS, so I wrote a simple app using [LovePotion](https://lovebrew.org/#/).<br>
 Hopefully you find some use for it, feel free to change anything you aren't too fond of.
 
 ## controls
