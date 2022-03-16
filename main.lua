@@ -1,4 +1,4 @@
--- playcoin buddy 1.0.0
+-- playcoin buddy 1.1.0
 -- chrimsbrew
 
 -- pull the number of playcoins from the system
@@ -11,8 +11,10 @@ source:setLooping(true)
 source:play()
 
 function love.draw(screen)
-    love.graphics.print("play coins: "..coins, 15, 20)
-    love.graphics.print("Up/Down: +/- 1 | Right/Left: +/- 25\nX: Set 300 | Y: Set 0\nA: Save\nStart: Quit",15,100)
+    if screen ~= "bottom" then -- display only on top screen
+        love.graphics.print("play coins: "..coins, 15, 20)
+        love.graphics.print("Up/Down: +/- 1 | Right/Left: +/- 25\nX: Set 300 | Y: Set 0\nA: Save\nStart: Quit",15,100)
+    end
 end
 
 -- take input from the user
