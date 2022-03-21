@@ -5,8 +5,8 @@
 coins = love.system.getPlayCoins()
 
 -- play background music
-source = love.audio.newSource("pcbtheme2.wav", "stream")
-source:setVolume(1.0) -- max volume 1.0
+source = love.audio.newSource("pcbtheme2.wav", "stream") -- stream saves memory, which shouldn't be an issue with an app like this but it can't hurt.
+source:setVolume(1.0) -- max volume is 1.0
 source:setLooping(true)
 source:play()
 
@@ -43,7 +43,7 @@ function love.gamepadpressed(joystick, button)
         coins = 0
     end
 
-    if button == "x" then -- quick max
+    if button == "x" then -- quick max (300)
         coins = 300
     end
 
